@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const MainWrapper = styled.div`
   display: flex;
   width: 1225px;
+  margin-bottom: 150px;
 `;
 
 export const FoodWrapper = styled.div`
@@ -22,6 +23,7 @@ export const RestaurantText = styled.h2`
   line-height: 30px;
 
   margin-top: 15px;
+  padding-bottom: 16px;
 
   color: #ff9401;
 `;
@@ -73,6 +75,8 @@ export const FoodBtn = styled.button`
   color: #ffffff;
 
   margin-bottom: 60px;
+
+  box-shadow: 0px 20px 40px rgba(255, 148, 1, 0.15);
 `;
 
 export const TitleImg1 = styled.img`

@@ -15,6 +15,7 @@ export const HeaderLogo = styled.img`
   height: 32px;
 
   padding-right: 354px;
+  padding-top: 19px;
 `;
 
 export const HeaderSandwich = styled.img`
