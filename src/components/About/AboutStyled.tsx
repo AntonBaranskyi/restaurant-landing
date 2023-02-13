@@ -9,6 +9,7 @@ export const AboutWrapper = styled.div`
     rgba(255, 148, 1, 0.05) 0%,
     rgba(255, 237, 211, 0) 100%
   );
+ 
 
   margin: 0 auto;
 `;

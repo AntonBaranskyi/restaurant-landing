@@ -69,6 +69,7 @@ export const FoodBtn = styled.button`
   font-size: 20px;
   line-height: 30px;
 
+  cursor: pointer;
   /* identical to box height, or 150% */
   text-transform: capitalize;
 

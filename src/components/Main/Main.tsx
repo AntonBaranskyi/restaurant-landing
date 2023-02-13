@@ -28,6 +28,17 @@ import face from "../../assets/Facebook.png";
 import twit from "../../assets/Twitter.png";
 import insta from "../../assets/Instagram.png";
 
+interface IPhoto {
+  link: string;
+  alt: string;
+}
+
+const photoData: IPhoto[] = [
+  { link: face, alt: "Facebook" },
+  { link: twit, alt: "Twitter" },
+  { link: insta, alt: "Insta" },
+];
+
 const Main: FC = () => {
   return (
     <MainWrapper>
@@ -50,9 +61,10 @@ const Main: FC = () => {
 
         <FoodBtn>Explore Food Menu</FoodBtn>
         <SocialDiv>
-          <SocialImg src={face} />
-          <SocialImg src={twit} />
-          <SocialImg src={insta} />
+          {photoData &&
+            photoData.map((item) => {
+              return <SocialImg src={item.link} alt={item.alt} />;
+            })}
         </SocialDiv>
       </FoodWrapper>
 
