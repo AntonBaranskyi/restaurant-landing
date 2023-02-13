@@ -7,6 +7,8 @@ export const Wrapper = styled.div`
     rgba(255, 237, 211, 0) 100%
   );
  justify-content: center;
+
+ margin-bottom: 131px;
 `;
 
 export const RecipesSelf = styled.h2`
