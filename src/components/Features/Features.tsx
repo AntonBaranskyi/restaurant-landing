@@ -11,7 +11,8 @@ import food1 from "../../assets/food.png";
 import mouth from "../../assets/mouth.png";
 import truck from "../../assets/truck.png";
 import back from "../../assets/3.png";
-import back2 from '../../assets/back2.png';
+import back2 from "../../assets/back2.png";
+import uniqid from "uniqid";
 
 export interface IFeatures {
   link: string;
@@ -47,7 +48,14 @@ const Features: React.FC = () => {
       <Wrapper>
         {featuresData &&
           featuresData.map(({ link, title, text }) => {
-            return <FeaturesItem link={link} title={title} text={text} />;
+            return (
+              <FeaturesItem
+                key={uniqid()}
+                link={link}
+                title={title}
+                text={text}
+              />
+            );
           })}
       </Wrapper>
     </FeaturesWrapper>

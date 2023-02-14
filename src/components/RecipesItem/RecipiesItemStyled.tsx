@@ -29,7 +29,7 @@ export const Text = styled.p`
   font-weight: 500;
   font-size: 20px;
   line-height: 60px;
-  padding: 0 140px 15px 10px;
+  padding: 0 132px 15px 10px;
 
   color: #2e2e2e;
 `;
@@ -65,7 +65,7 @@ export const Price = styled.p`
 export const StarImg = styled.img`
   position: relative;
   top: 25px;
-  left: 3px;
+  left: 2px;
   width: 11px;
   height: 11px;
   display: inline-block;

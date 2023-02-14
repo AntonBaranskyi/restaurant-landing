@@ -27,6 +27,7 @@ import big3 from "../../assets/for_big3.png";
 import face from "../../assets/Facebook.png";
 import twit from "../../assets/Twitter.png";
 import insta from "../../assets/Instagram.png";
+import uniqid from "uniqid";
 
 interface IPhoto {
   link: string;
@@ -63,7 +64,9 @@ const Main: FC = () => {
         <SocialDiv>
           {photoData &&
             photoData.map((item) => {
-              return <SocialImg src={item.link} alt={item.alt} />;
+              return (
+                <SocialImg key={uniqid()} src={item.link} alt={item.alt} />
+              );
             })}
         </SocialDiv>
       </FoodWrapper>
