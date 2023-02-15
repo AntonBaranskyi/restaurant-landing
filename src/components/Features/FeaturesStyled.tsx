@@ -40,8 +40,13 @@ export const BackImg = styled.img`
   height: 309px;
   width: 409px;
   position: absolute;
-  left: 1269px;
+  right: 0;
   top: 1540px;
+
+  @media (max-width: 1536px) {
+    height: 321px;
+    width: 251px;
+  }
 `;
 export const Back2Img = styled.img`
   position: absolute;

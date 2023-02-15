@@ -8,6 +8,7 @@ export const FooterTag = styled.footer`
     rgba(255, 237, 211, 0) 100%
   );
   flex-wrap: wrap;
+  width: 100%;
 `;
 
 export const FooterImg = styled.img`
@@ -60,7 +61,7 @@ export const FooterItemsWrapper = styled.div`
   gap: 100px;
   padding-top: 85px;
 
-padding-bottom: 50px;
+  padding-bottom: 50px;
 `;
 
 export const FooterColumn = styled.div``;
@@ -109,6 +110,10 @@ export const HeartImg = styled.img`
   height: 109px;
   left: 800px;
   bottom: 61px;
+
+  @media (max-width: 1536px) {
+    left: 634px;
+  }
 `;
 
 export const ReservedWrapper = styled.div`

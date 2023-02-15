@@ -119,6 +119,11 @@ export const ImgWrapper = styled.div`
 export const BigImg = styled.img`
   width: 835px;
   height: 534px;
+
+  @media (max-width: 1536px) {
+    width: 690px;
+    height: 472px;
+  }
 `;
 
 export const SmallImg1 = styled.img`
@@ -130,6 +135,11 @@ export const SmallImg1 = styled.img`
   left: 1488px;
 
   filter: drop-shadow(0px 20px 40px rgba(255, 151, 2, 0.15));
+
+  @media (max-width: 1536px) {
+    top: 581px;
+    left: 1204px;
+  }
 `;
 
 export const SmallImg2 = styled.img`
@@ -139,6 +149,11 @@ export const SmallImg2 = styled.img`
 
   top: 650px;
   left: 1309px;
+
+  @media (max-width: 1536px) {
+    top: 479px;
+    left: 1359px;
+  }
 
   filter: drop-shadow(0px 20px 40px rgba(255, 151, 2, 0.15));
 `;
@@ -152,6 +167,11 @@ export const SmallImg3 = styled.img`
   left: 1101px;
 
   filter: drop-shadow(0px 20px 40px rgba(255, 151, 2, 0.15));
+
+  @media (max-width: 1536px) {
+    top: 479px;
+    left: 1034px;
+  }
 `;
 
 export const SocialDiv = styled.div`
